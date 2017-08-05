@@ -35,7 +35,7 @@ Is was created for me to play around with Python. And yes I am a java developer 
 
  All documentation needed can be found in this README and through comments in the source code.
 
-###Installation
+### Installation
 
 #### Requirements
 
@@ -43,7 +43,7 @@ Is was created for me to play around with Python. And yes I am a java developer 
 
    + httplib2
 
-####Install
+#### Install
 
    + Extract master
 
