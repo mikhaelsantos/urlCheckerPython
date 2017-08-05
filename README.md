@@ -2,7 +2,7 @@ urlCheckerPython
 ================
 
 
-###What is it?
+### What is it?
 
 
  It is an application that reads a list of URLs from a configuration file and returns information related with:
@@ -15,7 +15,7 @@ urlCheckerPython
    
 Is was created for me to play around with Python. And yes I am a java developer so my python is still very Java-like
 
-###What it does?
+### What it does?
 
 
    + Reads a list of web pages (HTTP URLs) and corresponding page content requirements from a configuration file.
@@ -30,14 +30,14 @@ Is was created for me to play around with Python. And yes I am a java developer 
 
    + Implements a single-page HTTP server interface in the same process that shows (HTML) each monitored web site and the last checked status.
 
-###Documentation
+### Documentation
 
 
  All documentation needed can be found in this README and through comments in the source code.
 
 ###Installation
 
-####Requirements
+#### Requirements
 
    + Python 2.7 Installed
 
@@ -47,7 +47,7 @@ Is was created for me to play around with Python. And yes I am a java developer 
 
    + Extract master
 
-###Configure
+### Configure
 
    There is an configuration file named config.conf
 
@@ -85,7 +85,7 @@ Is was created for me to play around with Python. And yes I am a java developer 
      
   The application doesn't interpret any other configurations.
 
-###Run
+### Run
  
 
    + python main.py
@@ -108,12 +108,12 @@ Is was created for me to play around with Python. And yes I am a java developer 
          
          + Line logged as [Error] if status code is not 200.
  
-###Stop Application
+### Stop Application
  
  The application stops by pressing ctrl+c. It then stops threading and stops the http server
 
  
-###Design
+### Design
 
 
  The application was developed with modularity in mind and using the most of the existing python libraries.
@@ -128,7 +128,7 @@ Is was created for me to play around with Python. And yes I am a java developer 
 
    + The component for the server handler: serverHandler.py.
 
-####main.py
+#### main.py
 
    + Responsible for initializing all modules
 
@@ -136,7 +136,7 @@ Is was created for me to play around with Python. And yes I am a java developer 
 
    + Stops the server
 
-####configuration.py
+#### configuration.py
 
    + Loads the configuration file to memory.
 
@@ -144,7 +144,7 @@ Is was created for me to play around with Python. And yes I am a java developer 
 
    + Gets the List of urls to check.
 
-####webPage.py
+#### webPage.py
 
    + Creates an instance of a web page from the url in the configuration file.
 
@@ -160,7 +160,7 @@ Is was created for me to play around with Python. And yes I am a java developer 
 
    + Returns results on demand
 
-####serverHandler.py
+#### serverHandler.py
 
    + Defines behavior on http get
 
@@ -170,10 +170,10 @@ Is was created for me to play around with Python. And yes I am a java developer 
 
  Dividing the code makes it easier to read and if it was necessary to add more business logic, for example, to the verfyWebPages method it would be easier to change the code without impacting the rest of the application.
 
-###Contacts
+### Contacts
 
     + mikhaelsantos@gmail.com
-##License
+## License
 Copyright (c) 2010-2013 Mikhaél Santos
 
 Permission is hereby granted, free of charge, to any person
